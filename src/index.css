@@ -5,5 +5,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(102, 0, 102);
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  background-color: rgb(49, 0, 49);
+  padding: 1em 3em;
+  color: #eee;
+  text-align: center;
+}

@@ -14,8 +14,13 @@ const BookContextProvider = (props) => {
             [...books, { title, author, id: uuid() }]
         )
     }
+
+    const removeBook = (id) => {
+        const filtered = books.filter(book => book.id !== id)
+        setBooks(filtered)
+    }
     return (
-        <BookContext.Provider value={{books}}>
+        <BookContext.Provider value={{books, removeBook, addBook}}>
             {props.children}
         </BookContext.Provider>
     );

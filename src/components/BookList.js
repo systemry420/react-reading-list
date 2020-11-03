@@ -1,18 +1,19 @@
 import React, { useContext } from 'react';
 import { BookContext } from '../context/BookCotext';
 import BookDetails from './BookDetails'
+import './../index.css'
 
 const BookList = () => {
     const { books } = useContext(BookContext)
     
-    return ( 
-        <div className="book-list">
+    return (
+        <ul className="book-list">
             {books.map( book => {
                 return (
-                    <BookDetails books={books} key={book.id} />
+                    <BookDetails book={book} key={book.id} />
                 )
             })}
-        </div>
+        </ul>
      );
 }
  

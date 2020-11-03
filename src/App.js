@@ -1,3 +1,4 @@
+import BookForm from './components/BookForm';
 import BookList from './components/BookList';
 import Navbar from './components/Navbar';
 import BookContextProvider from './context/BookCotext';
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
         <BookContextProvider>
           <Navbar />
+          <BookForm />
           <BookList />
         </BookContextProvider>
     </div>

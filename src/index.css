@@ -61,3 +61,26 @@ body {
   color: #fff;
   text-align: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  padding: .5em;
+  margin: 5px 0;
+  background-color: rgb(143, 0, 143);
+  border: none;
+  color: #fff;
+  font-size: .9em;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  background-color: rgb(87, 0, 87);
+  cursor: pointer;
+}
